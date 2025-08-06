@@ -1,4 +1,4 @@
-baseURL = "http://theironspiders.com/"
+baseURL = "https://theironspiders.com/"
 languageCode = "en-us"
 title = "The Iron Spiders"
 theme = "theironspiders"
