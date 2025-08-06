@@ -3,4 +3,7 @@ languageCode = "en-us"
 title = "The Iron Spiders"
 theme = "theironspiders"
 
+[params]
+featured_image = "tis.png"
+
 [taxonomies]
