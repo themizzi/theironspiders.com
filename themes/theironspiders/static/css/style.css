@@ -32,6 +32,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    overflow-x: hidden;
 }
 
 .content {
@@ -90,7 +91,7 @@ body {
     .message h2 {
         font-size: 1.5rem;
     }
-    
+
     .video iframe {
         height: 200px;
     }
