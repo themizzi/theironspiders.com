@@ -1,0 +1,97 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light mode (default) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    min-height: 100vh;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    .logo h1 {
+        color: #ff4757 !important;
+    }
+}
+
+/* Landing page layout */
+.landing {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Logo/Band name */
+.logo {
+    margin-bottom: 2rem;
+}
+
+.logo img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.logo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #d63031;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Video container */
+.video {
+    margin: 2rem 0;
+    width: 100%;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* Coming soon message */
+.message h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: normal;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2rem;
+    }
+    
+    .message h2 {
+        font-size: 1.5rem;
+    }
+    
+    .video iframe {
+        height: 200px;
+    }
+}

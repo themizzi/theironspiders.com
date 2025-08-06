@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main class="landing">
+    <header class="content">
+        {{ with resources.Get .Params.logo }}
+        {{ with .Resize "300x" }}
+        <hgroup class="logo">
+            <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }}" />
+        </hgroup>
+        {{ end }}
+        {{ end }}
+        
+        {{- if .Params.video }}
+        <section class="video">
+            <iframe 
+                src="{{ .Params.video }}" 
+                title="{{ .Title }}"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </section>
+        {{- end }}
+        
+        <section class="message">
+            {{ .Content }}
+        </section>
+    </header>
+</main>
+{{ end }}
